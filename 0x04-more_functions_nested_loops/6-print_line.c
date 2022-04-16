@@ -1,16 +1,21 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - starting func
- * Description: draw straight line
- * @n: number of times a line is drawn
+ * print_line - check for a digit
+ * @n : number of _ to be printed
+ * Return:void
  */
 
 void print_line(int n)
 {
-	char c;
 
-	for (c = 0; c < n; c++)
+	int i = 0;
+
+	while (i < n && n > 0)
+	{
 		_putchar('_');
+		i++;
+	}
 	_putchar('\n');
+
 }

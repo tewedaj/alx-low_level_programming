@@ -1,22 +1,13 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isdigit - starting func
- * @c: ASCII digit
- * Description: checks 0-9
- * Return: 1 for digit, 0 for other
+ * _isdigit - check for a digit
+ * @c : character to check
+ * Return:0 or 1
  */
 
 int _isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
-}
+	return (c >= 48 && c <= 57);
 
+}
